@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+</head>
+<style>
+
+    /* 
+    # .....= id
+    .      =class
+    : .....= pseudo-class
+    :: .....= pseudo-element
+    > ......=children
+    */
+
+
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+    a:visited{
+        color:brown
+    }
+    a:hover{
+        color:black;
+        text-decoration: underline;
+    }
+    a:active{
+        color:yellow
+    }
+        a::before{
+content: '→';
+
+        }
+        a::fter{
+            content: '→';
+        }
+    
+    .especial::after{
+        content: '←';
+      
+    }
+</style>
+<body>
+    <h1>personalizando links</h1>
+    <ul> 
+        <li><a href="https://https://github.com/">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/watch?">canal do Youtube</a></li>
+        <li><a href="https://www.embrapa.br/secretaria-de-inteligencia-e-relacoes-estrategicas-sire"class='especial'>Site do curso em video</a> </li>
+    </ul>
+</body>
+</html>
